@@ -31,3 +31,8 @@
     background-color: #f2f2f2;
   }
   
+  /* CSS for pagination buttons */
+  .active-header {
+    color: red; /* Change the color to your desired color */
+  }
+  

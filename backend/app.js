@@ -89,12 +89,12 @@ app.put("/api/update", async (req, res) => {
 });
 
 app.post("/api/find", async (req, res) => {
-  const { id } = req.body;
+  const { name } = req.body;
 
   try {
     await mongoFunctions.connectToMongo();
 
-    const record = await mongoFunctions.findRecordById(id, "stud_data");
+    const record = await mongoFunctions.findRecordById(name, "stud_data");
 
     if (record) {
       res.json({ success: true, record });

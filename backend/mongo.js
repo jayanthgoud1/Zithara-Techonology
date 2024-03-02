@@ -46,7 +46,7 @@ async function findRecordById(recordId, collectionName) {
   try {
     const db = client.db();
     const collection = db.collection(collectionName);
-    const result = await collection.findOne({ id: recordId });
+    const result = await collection.findOne({ name: recordId });
     return result;
   } catch (error) {
     console.error("Error finding record by ID:", error);

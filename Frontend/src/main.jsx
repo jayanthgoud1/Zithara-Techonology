@@ -204,9 +204,9 @@ export default function Analyse() {
             <br />
             <input
               type="text"
-              name="id"
-              placeholder="ID"
-              value={id}
+              name="name"
+              placeholder="Name"
+              value={name}
               onChange={handleInputChange}
             />
           </div>
